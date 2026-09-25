@@ -1,0 +1,3 @@
+# PHP - エラー表示
+
+php_flag display_errors On
