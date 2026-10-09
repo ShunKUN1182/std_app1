@@ -6,6 +6,8 @@ class Model
 {
   private string $className = "Model";
   private ?PDO $db = null;
+  private ?PDOStatement $stmt = null;
+
 
   public function __construct()
   {
@@ -21,12 +23,21 @@ class Model
   }
 
   // SQLを実行する
-  public function query(string $sql): array
+  public function query(string $sql): self
   {
     $stmt = $this->db->query($sql);
     $stmt->execute();
+    return $this;
+  }
+
+  // SQLの実行結果からレコード情報を取り出す
+  public function receive(): array
+  {
+    if (is_null($this->stmt)) {
+      return [];
+    }
     $result = [];
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+    while ($row = $this->stmt->fetch(PDO::FETCH_ASSOC)) {
       $result[] = $row;
     }
     return $result;
