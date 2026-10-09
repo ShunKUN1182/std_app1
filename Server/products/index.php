@@ -12,7 +12,9 @@ try {
   // メソッドチェーン
   $products = $model->query("SELECT * FROM app1_products")->receive();
 
-  var_dump($products);
+  // response
+  header("Content-Type: application/json");
+  print json_encode($products);
 } catch (PDOException $e) {
   print $e->getMessage();
 }

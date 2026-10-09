@@ -25,8 +25,8 @@ class Model
   // SQLを実行する
   public function query(string $sql): self
   {
-    $stmt = $this->db->query($sql);
-    $stmt->execute();
+    $this->stmt = $this->db->query($sql);
+    $this->stmt->execute();
     return $this;
   }
 
