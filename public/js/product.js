@@ -1,7 +1,5 @@
 // 作品情報
 
-const { cache } = require("react");
-
 // https:153.127.69.211/ecc/sfukusima/std_app1/products/
 const apiURL = "http://153.127.69.211/ecc/sfukusima/std_app1/products/";
 
