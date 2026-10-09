@@ -9,22 +9,24 @@
         <script type="module" src="../js/product.js" defer></script>
     </head>
     <body class="bg-slate-50">
+        <header class="h-20 px-8 bg-amber-400 flex items-center">
+            <h1 class="text-2xl font-bold text-red-50">作品一覧</h1>
+        </header>
         <div class="container m-auto">
-            <h1 class="text-4xl font-bold text-emerald-600 my-8">作品一覧</h1>
-            <div class="flex gap-2">
-                <div class="border border-gray-800 p-5">
+            <div class="flex gap-2 my-8">
+                <div class="shadow-xl rounded-md">
                     <img
                         src="../img/img-default.png"
                         alt="作品サムネイル"
-                        class="bg-gray-300 w-80 h-60 my-0"
+                        class="bg-gray-300 w-80 h-60 my-0 rounded-t-md"
                     />
-                    <div class="flex flex-col gap-1">
-                        <h2 class="text-lg mt-6">作品タイトル</h2>
+                    <div class="flex flex-col gap-1 p-6">
+                        <h2 class="text-lg">作品タイトル</h2>
                         <p class="text-sm">説明文</p>
                         <ul class="flex gap-2">
-                            <li class="text-sm bg-gray-950 text-white p-2 rounded-md">HTML</li>
-                            <li class="text-sm bg-gray-950 text-white p-2 rounded-md">CSS</li>
-                            <li class="text-sm bg-gray-950 text-white p-2 rounded-md">JS</li>
+                            <li class="text-xs bg-gray-950 text-white p-2 rounded-md mt-1">HTML</li>
+                            <li class="text-xs bg-gray-950 text-white p-2 rounded-md mt-1">CSS</li>
+                            <li class="text-xs bg-gray-950 text-white p-2 rounded-md mt-1">JS</li>
                         </ul>
                     </div>
                 </div>
