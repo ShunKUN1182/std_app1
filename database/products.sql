@@ -27,10 +27,31 @@ INSERT INTO app1_products(
 )
 VALUES
 (
-  "温泉郷 ~湯けむり珈琲店~",
-  "AJSID",
+  "中崎町キャンドルナイトポスター",
+  "準グランプリを受賞した作品になります",
+  '["HTML","CSS","Figma","Illustrator"]',
+  0,
+  1
+),(
+  "URANAI",
+  "占いをもっと楽しくする作品になります",
+  '["HTML","CSS","Figma","Illustrator"]',
+  0,
+  1
+),
+(
+  "トレジャーアカデミー",
+  "お宝ザクザク集めよう！！",
+  '["HTML","CSS","Figma","Illustrator"]',
+  0,
+  1
+),
+(
+  "友安製作所LPサイト",
+  "大阪八尾にある友安製作所様と連携し、LPサイトを作成させていただきました",
   '["HTML","CSS","Figma","Illustrator"]',
   0,
   1
 );
+
 
