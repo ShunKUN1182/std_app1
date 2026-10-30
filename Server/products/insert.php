@@ -8,8 +8,9 @@ try {
     throw new Exception("METHODの種類が違います");
   }
 
-  var_dump($_POST);
-  var_dump(file_get_contents("php://input"));
+  $request = json_decode(file_get_contents("php://input"));
+  var_dump($request);
+  $request->product_title;
   exit;
   // $model = new Model();
   // $model->query("
