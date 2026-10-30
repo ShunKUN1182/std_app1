@@ -12,22 +12,22 @@ const Product = (data) => {
             : data.product_title.slice(0, titleMaxLength) + "...";
 
     return `
-      <div class="shadow-xl rounded-md">
-        <img
-            src="../img/img-default.png"
-            alt="${title}のサムネイル"
-            class="bg-gray-300 w-80 h-60 my-0 rounded-t-md"
-        />
-        <div class="flex flex-col gap-1 p-6">
-            <h2 class="text-lg font-bold">${title}</h2>
-            <p class="text-sm">
-                ${description}
-            </p>
-            <ul class="flex gap-2">
-                ${renderTag(newTags)}
-            </ul>
+        <div class="shadow-xl rounded-md">
+            <img
+                src="../img/img-default.png"
+                alt="${title}のサムネイル"
+                class="bg-gray-300 w-80 h-60 my-0 rounded-t-md"
+            />
+            <div class="flex flex-col gap-1 p-6">
+                <h2 class="text-lg font-bold">${title}</h2>
+                <p class="text-sm">
+                    ${description}
+                </p>
+                <ul class="flex gap-2">
+                    ${renderTag(newTags)}
+                </ul>
+            </div>
         </div>
-      </div>
     `;
 };
 

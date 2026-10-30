@@ -26,7 +26,7 @@ class Model
   public function query(string $sql): self
   {
     $this->stmt = $this->db->query($sql);
-    $this->stmt->execute();
+    // $this->stmt->execute();
     return $this;
   }
 
