@@ -43,6 +43,12 @@ class Model
     return $result;
   }
 
+  // lastInsertIdを返す
+  public function lastId(?string $name = null): int
+  {
+    return $this->db->lastInsertId($name);
+  }
+
   // クラス名を表示する
   public function showClassName(): void
   {
