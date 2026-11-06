@@ -9,7 +9,7 @@ try {
   $request = json_decode(file_get_contents("php://input"));
   $request->product_skill = json_encode($request->product_skill);
   $model = new Model();
-  $stmt = $model->query("
+  $model->query("
     INSERT INTO app1_products(
       product_title,
       product_desc,
